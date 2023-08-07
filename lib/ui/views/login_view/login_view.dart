@@ -36,6 +36,14 @@ class _LoginViewState extends State<LoginView> {
               hintext: 'اسم المستخدم',
               prifexIcon: Icons.person_outline,
             ),
+            CustomText(
+                text: 'اسم المستخدم',
+                textColor: AppColors.mainPurpleColor,
+                textsize: screenWidth(20)),
+            CustomTextField(
+              hintext: 'اسم المستخدم',
+              prifexIcon: Icons.person_outline,
+            ),
             CustomButton(text: 'تسجيل الدخول'),
           ],
         ),
