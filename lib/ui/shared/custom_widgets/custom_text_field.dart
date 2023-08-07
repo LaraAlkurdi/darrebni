@@ -12,10 +12,8 @@ class CustomTextField extends StatelessWidget {
   final String hintext;
   final IconData? suffexIcon;
   final IconData? prifexIcon;
-  final String? Function(String?)?
-      validator; //المدقق:لفحص المدخلات التي يدخلها المستخدم نفس شغل الكونترولر
-  final TextEditingController?
-      controller; //للحصول على المدخلات التي يقوم المستخدم بادخالها
+  final String? Function(String?)? validator;
+  final TextEditingController? controller;
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -32,14 +30,14 @@ class CustomTextField extends StatelessWidget {
           contentPadding: EdgeInsets.symmetric(
               vertical: size.width * 0.04, horizontal: size.width * 0.05),
           filled: true,
-          fillColor: AppColors.mainGreyColor,
+          fillColor: AppColors.mainSkyColor,
           hintText: hintext,
           hintStyle: TextStyle(
               color: Color.fromRGBO(182, 183, 183, 1),
               fontSize: size.width * 0.04),
           border: OutlineInputBorder(
               borderSide: BorderSide.none,
-              borderRadius: BorderRadius.all(Radius.circular(25))),
+              borderRadius: BorderRadius.all(Radius.circular(10))),
         ),
       ),
     );
